@@ -129,7 +129,7 @@ public class Utils {
             if (fileHandle.type() != FileType.Internal) {
                 newParticleEffect.loadEmitters(fileHandle);
 
-                if (imageFileMap == null) newParticleEffect.loadEmitterImages(fileHandle.parent());
+                if (imageFileMap == null) loadEmitterImagesWithFallback(newParticleEffect, fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
                         var sprite = new Sprite(new Texture(imageFile.value));
@@ -139,8 +139,8 @@ public class Utils {
 
                     for (int i = 0, n = newParticleEffect.getEmitters().size; i < n; i++) {
                         var emitter = newParticleEffect.getEmitters().get(i);
-                        var newSprites = new Array<Sprite>();
                         if (emitter.getImagePaths().size == 0) continue;
+                        var newSprites = new Array<Sprite>();
                         for (String imagePath : emitter.getImagePaths()) {
                             String imageName = new File(imagePath.replace('\\', '/')).getName();
                             Sprite sprite = sprites.get(imageName);
@@ -187,14 +187,7 @@ public class Utils {
 
         for (var emitter : particleEffect.getEmitters()) {
             activeEmitters.put(emitter, true);
-            for (int i = 0; i < emitter.getImagePaths().size; i++) {
-                var path = new FileHandle(emitter.getImagePaths().get(i)).name();
-                emitter.getImagePaths().set(i, path);
-                var imageHandle = fileHandle.parent().child(path);
-                fileHandles.put(path, imageHandle);
-                if (i < emitter.getSprites().size)
-                    sprites.put(path, emitter.getSprites().get(i));
-            }
+            normalizeEmitterImagePaths(emitter, fileHandle.parent());
         }
         return true;
     }
@@ -266,18 +259,18 @@ public class Utils {
             if (fileHandle.type() != FileType.Internal) {
                 newParticleEffect.loadEmitters(fileHandle);
 
-                if (imageFileMap == null) newParticleEffect.loadEmitterImages(fileHandle.parent());
+                if (imageFileMap == null) loadEmitterImagesWithFallback(newParticleEffect, fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
                         var sprite = new Sprite(new Texture(imageFile.value));
-                        sprites.put(imageFile.value.name(), sprite);
+                        sprites.put(imageFile.key, sprite);
                     }
                     fileHandles.putAll(imageFileMap);
 
                     for (int i = 0, n = newParticleEffect.getEmitters().size; i < n; i++) {
                         var emitter = newParticleEffect.getEmitters().get(i);
-                        var newSprites = new Array<Sprite>();
                         if (emitter.getImagePaths().size == 0) continue;
+                        var newSprites = new Array<Sprite>();
                         for (String imagePath : emitter.getImagePaths()) {
                             String imageName = new File(imagePath.replace('\\', '/')).getName();
                             Sprite sprite = sprites.get(imageName);
@@ -315,15 +308,7 @@ public class Utils {
         for (var emitter : particleEffect.getEmitters()) {
             emitter.setPosition(oldActiveEmitters.orderedKeys().first().getX(), oldActiveEmitters.orderedKeys().first().getY());
             activeEmitters.put(emitter, true);
-
-            for (int i = 0; i < emitter.getImagePaths().size; i++) {
-                var path = new FileHandle(emitter.getImagePaths().get(i)).name();
-                emitter.getImagePaths().set(i, path);
-                var imageHandle = fileHandle.parent().child(path);
-                fileHandles.put(path, imageHandle);
-                if (i < emitter.getSprites().size)
-                    sprites.put(path, emitter.getSprites().get(i));
-            }
+            normalizeEmitterImagePaths(emitter, fileHandle.parent());
         }
 
         //copy the new emitters and clear the particle effect
@@ -337,6 +322,37 @@ public class Utils {
         emitterPropertiesPanel.populateScrollTable(null);
 
         return true;
+    }
+
+    private static void normalizeEmitterImagePaths(ParticleEmitter emitter, FileHandle particleDir) {
+        for (int i = 0; i < emitter.getImagePaths().size; i++) {
+            var originalPath = emitter.getImagePaths().get(i).replace('\\', '/');
+            var path = new File(originalPath).getName();
+            emitter.getImagePaths().set(i, path);
+            FileHandle imageHandle = particleDir.child(originalPath);
+            if (!imageHandle.exists()) imageHandle = particleDir.child(path);
+            fileHandles.put(path, imageHandle);
+            if (i < emitter.getSprites().size)
+                sprites.put(path, emitter.getSprites().get(i));
+        }
+    }
+
+    private static void loadEmitterImagesWithFallback(ParticleEffect effect, FileHandle imagesDir) {
+        for (int i = 0, n = effect.getEmitters().size; i < n; i++) {
+            var emitter = effect.getEmitters().get(i);
+            if (emitter.getImagePaths().size == 0) continue;
+            var newSprites = new Array<Sprite>();
+            for (String imagePath : emitter.getImagePaths()) {
+                String normalizedPath = imagePath.replace('\\', '/');
+                FileHandle imageHandle = imagesDir.child(normalizedPath);
+                if (!imageHandle.exists()) {
+                    String imageName = normalizedPath.substring(normalizedPath.lastIndexOf('/') + 1);
+                    imageHandle = imagesDir.child(imageName);
+                }
+                newSprites.add(new Sprite(new Texture(imageHandle)));
+            }
+            emitter.setSprites(newSprites);
+        }
     }
 
     public static ParticleEmitter createNewEmitter () {
