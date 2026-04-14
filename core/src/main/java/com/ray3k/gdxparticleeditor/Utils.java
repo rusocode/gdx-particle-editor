@@ -129,7 +129,7 @@ public class Utils {
             if (fileHandle.type() != FileType.Internal) {
                 newParticleEffect.loadEmitters(fileHandle);
 
-                if (imageFileMap == null) loadEmitterImagesWithFallback(newParticleEffect, fileHandle.parent());
+                if (imageFileMap == null) newParticleEffect.loadEmitterImages(fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
                         var sprite = new Sprite(new Texture(imageFile.value));
@@ -139,8 +139,8 @@ public class Utils {
 
                     for (int i = 0, n = newParticleEffect.getEmitters().size; i < n; i++) {
                         var emitter = newParticleEffect.getEmitters().get(i);
-                        if (emitter.getImagePaths().size == 0) continue;
                         var newSprites = new Array<Sprite>();
+                        if (emitter.getImagePaths().size == 0) continue;
                         for (String imagePath : emitter.getImagePaths()) {
                             String imageName = new File(imagePath.replace('\\', '/')).getName();
                             Sprite sprite = sprites.get(imageName);
@@ -259,18 +259,18 @@ public class Utils {
             if (fileHandle.type() != FileType.Internal) {
                 newParticleEffect.loadEmitters(fileHandle);
 
-                if (imageFileMap == null) loadEmitterImagesWithFallback(newParticleEffect, fileHandle.parent());
+                if (imageFileMap == null) newParticleEffect.loadEmitterImages(fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
                         var sprite = new Sprite(new Texture(imageFile.value));
-                        sprites.put(imageFile.key, sprite);
+                        sprites.put(imageFile.value.name(), sprite);
                     }
                     fileHandles.putAll(imageFileMap);
 
                     for (int i = 0, n = newParticleEffect.getEmitters().size; i < n; i++) {
                         var emitter = newParticleEffect.getEmitters().get(i);
-                        if (emitter.getImagePaths().size == 0) continue;
                         var newSprites = new Array<Sprite>();
+                        if (emitter.getImagePaths().size == 0) continue;
                         for (String imagePath : emitter.getImagePaths()) {
                             String imageName = new File(imagePath.replace('\\', '/')).getName();
                             Sprite sprite = sprites.get(imageName);
@@ -334,24 +334,6 @@ public class Utils {
             fileHandles.put(path, imageHandle);
             if (i < emitter.getSprites().size)
                 sprites.put(path, emitter.getSprites().get(i));
-        }
-    }
-
-    private static void loadEmitterImagesWithFallback(ParticleEffect effect, FileHandle imagesDir) {
-        for (int i = 0, n = effect.getEmitters().size; i < n; i++) {
-            var emitter = effect.getEmitters().get(i);
-            if (emitter.getImagePaths().size == 0) continue;
-            var newSprites = new Array<Sprite>();
-            for (String imagePath : emitter.getImagePaths()) {
-                String normalizedPath = imagePath.replace('\\', '/');
-                FileHandle imageHandle = imagesDir.child(normalizedPath);
-                if (!imageHandle.exists()) {
-                    String imageName = normalizedPath.substring(normalizedPath.lastIndexOf('/') + 1);
-                    imageHandle = imagesDir.child(imageName);
-                }
-                newSprites.add(new Sprite(new Texture(imageHandle)));
-            }
-            emitter.setSprites(newSprites);
         }
     }
 
@@ -519,7 +501,7 @@ public class Utils {
     }
 
     public static Shortcut createShortcut (String name, String toolTipDesc, int[] defaultPrimaryKeybind,
-        int[] defaultSecondaryKeybind, int scope, Runnable runnable) {
+                                           int[] defaultSecondaryKeybind, int scope, Runnable runnable) {
         addKeybindReference(name, defaultPrimaryKeybind, defaultSecondaryKeybind);
         Shortcut s = new Shortcut(name, toolTipDesc, runnable);
         s.setScope(scope);
