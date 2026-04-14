@@ -53,9 +53,9 @@ import static com.ray3k.gdxparticleeditor.widgets.panels.EmitterPropertiesPanel.
  */
 public class Utils {
 
-    public static final int[] EMPTY_KEYBIND = new int[] {};
+    public static final int[] EMPTY_KEYBIND = new int[]{};
 
-    public static void openFileExplorer (FileHandle startDirectory) throws IOException {
+    public static void openFileExplorer(FileHandle startDirectory) throws IOException {
         if (startDirectory.exists()) {
             File file = startDirectory.file();
             Desktop desktop = Desktop.getDesktop();
@@ -65,7 +65,7 @@ public class Utils {
         }
     }
 
-    public static UIscale valueToUIscale (float value) {
+    public static UIscale valueToUIscale(float value) {
         for (var scale : UIscale.values()) {
             if (MathUtils.isEqual(scale.multiplier, value))
                 return scale;
@@ -73,14 +73,14 @@ public class Utils {
         return UIscale.SCALE_1X;
     }
 
-    public static void updateViewportScale (UIscale uiScale) {
+    public static void updateViewportScale(UIscale uiScale) {
         viewport.setUnitsPerPixel(uiScale.multiplier);
         previewViewport.setUnitsPerPixel(uiScale.multiplier);
         viewport.update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
         viewportWidget.updateViewport(false);
     }
 
-    public static void checkVersion (VersionUpdateRunnable updater) {
+    public static void checkVersion(VersionUpdateRunnable updater) {
         if (!preferences.getBoolean(Settings.NAME_CHECK_FOR_UPDATES, Settings.DEFAULT_CHECK_FOR_UPDATES))
             return;
 
@@ -92,18 +92,18 @@ public class Utils {
 
             Gdx.net.sendHttpRequest(httpRequest, new Net.HttpResponseListener() {
                 @Override
-                public void handleHttpResponse (Net.HttpResponse httpResponse) {
+                public void handleHttpResponse(Net.HttpResponse httpResponse) {
                     var newVersion = httpResponse.getResultAsString();
                     Gdx.app.postRunnable(() -> updater.versionUpdateAvailable(newVersion));
                 }
 
                 @Override
-                public void failed (Throwable t) {
+                public void failed(Throwable t) {
                     updater.versionUpdateAvailable(version);
                 }
 
                 @Override
-                public void cancelled () {
+                public void cancelled() {
                     updater.versionUpdateAvailable(version);
                 }
             });
@@ -112,7 +112,7 @@ public class Utils {
         thread.start();
     }
 
-    public static void initShaderProgram () {
+    public static void initShaderProgram() {
         var vertex = vertShaderFile == null ? spriteBatch.getShader().getVertexShaderSource() : vertShaderFile.readString();
         var frag = fragShaderFile == null ? spriteBatch.getShader().getFragmentShaderSource() : fragShaderFile.readString();
         shaderProgram = new ShaderProgram(vertex, frag);
@@ -324,20 +324,7 @@ public class Utils {
         return true;
     }
 
-    private static void normalizeEmitterImagePaths(ParticleEmitter emitter, FileHandle particleDir) {
-        for (int i = 0; i < emitter.getImagePaths().size; i++) {
-            var originalPath = emitter.getImagePaths().get(i).replace('\\', '/');
-            var path = new File(originalPath).getName();
-            emitter.getImagePaths().set(i, path);
-            FileHandle imageHandle = particleDir.child(originalPath);
-            if (!imageHandle.exists()) imageHandle = particleDir.child(path);
-            fileHandles.put(path, imageHandle);
-            if (i < emitter.getSprites().size)
-                sprites.put(path, emitter.getSprites().get(i));
-        }
-    }
-
-    public static ParticleEmitter createNewEmitter () {
+    public static ParticleEmitter createNewEmitter() {
         var emitter = new ParticleEmitter();
         emitter.setName("Untitled");
 
@@ -382,8 +369,8 @@ public class Utils {
 
         emitter.getTransparency().setActive(true);
         emitter.getTransparency().setHigh(1);
-        emitter.getTransparency().setTimeline(new float[] {0, 1});
-        emitter.getTransparency().setScaling(new float[] {1, 0});
+        emitter.getTransparency().setTimeline(new float[]{0, 1});
+        emitter.getTransparency().setScaling(new float[]{1, 0});
 
         emitter.setAdditive(true);
         emitter.setContinuous(true);
@@ -393,7 +380,7 @@ public class Utils {
         return emitter;
     }
 
-    public static int calcParticleCount () {
+    public static int calcParticleCount() {
         var count = 0;
         for (var emitter : particleEffect.getEmitters()) {
             count += emitter.getActiveCount();
@@ -401,7 +388,7 @@ public class Utils {
         return count;
     }
 
-    public static void removeUnusedImageFiles () {
+    public static void removeUnusedImageFiles() {
         var names = new ObjectSet<String>();
         for (var emitter : particleEffect.getEmitters()) {
             names.addAll(emitter.getImagePaths());
@@ -415,31 +402,15 @@ public class Utils {
         }
     }
 
-    public static void refreshUndoButtons () {
+    public static void refreshUndoButtons() {
         if (ClassicTable.classicTable != null)
             ClassicTable.classicTable.refreshUndo();
         if (WizardTable.wizardTable != null)
             WizardTable.wizardTable.refreshUndo();
     }
 
-    public enum UIscale {
-        SCALE_1X("1x", 1f), SCALE_1_5X("1.5x", 1 / 1.5f), SCALE_2X("2x", 1 / 2f), SCALE_3X("3x", 1 / 3f), SCALE_4X("4x", 1 / 4f);
-
-        public String text;
-        public float multiplier;
-
-        UIscale (String text, float multiplier) {
-            this.text = text;
-            this.multiplier = multiplier;
-        }
-    }
-
-    public interface VersionUpdateRunnable {
-        void versionUpdateAvailable (String newVersion);
-    }
-
-    public static void centerWindow () {
-        var graphics = (Lwjgl3Graphics)Gdx.graphics;
+    public static void centerWindow() {
+        var graphics = (Lwjgl3Graphics) Gdx.graphics;
         var displayMode = graphics.getDisplayMode();
         var window = graphics.getWindow();
         var monitor = graphics.getMonitor();
@@ -447,7 +418,7 @@ public class Utils {
             monitor.virtualY + displayMode.height / 2 - graphics.getHeight() / 2);
     }
 
-    public static void sizeWindowToFit (int maxWidth, int maxHeight, int displayBorder) {
+    public static void sizeWindowToFit(int maxWidth, int maxHeight, int displayBorder) {
         var displayMode = Gdx.graphics.getDisplayMode();
         int width = Math.min(displayMode.width - displayBorder * 2, maxWidth);
         int height = Math.min(displayMode.height - displayBorder * 2, maxHeight);
@@ -455,7 +426,7 @@ public class Utils {
         centerWindow();
     }
 
-    public static void sizeWindowToScreenHeight (float percentageOfScreenHeight, float widthRatio) {
+    public static void sizeWindowToScreenHeight(float percentageOfScreenHeight, float widthRatio) {
         var displayMode = Gdx.graphics.getDisplayMode();
         var height = MathUtils.floor(displayMode.height * percentageOfScreenHeight);
         var width = MathUtils.floor(widthRatio * height);
@@ -463,45 +434,41 @@ public class Utils {
     }
 
     public static boolean isWindowFocused() {
-        var window = ((Lwjgl3Graphics)Gdx.graphics).getWindow();
+        var window = ((Lwjgl3Graphics) Gdx.graphics).getWindow();
         return GLFW.glfwGetWindowAttrib(window.getWindowHandle(), GLFW.GLFW_FOCUSED) == GLFW.GLFW_TRUE;
     }
 
-    private static String getShortcutPreferenceString (String name, boolean primary) {
-        return primary ? name + "Shortcut" : name + "Shortcut" + "Secondary";
-    }
-
-    public static void clearKeybind (KeyMap keyMap, Shortcut s, boolean primary, boolean flush) {
+    public static void clearKeybind(KeyMap keyMap, Shortcut s, boolean primary, boolean flush) {
         keyMap.removeKeybind(s, primary);
         writeKeybindToPreferences(s.getName(), 0, primary, flush);
     }
 
-    public static void changeKeybind (KeyMap keyMap, Shortcut s, int[] unsortedKeybind, boolean primary, boolean flush) {
+    public static void changeKeybind(KeyMap keyMap, Shortcut s, int[] unsortedKeybind, boolean primary, boolean flush) {
         keyMap.changeKeybind(s, unsortedKeybind, primary);
         writeKeybindToPreferences(s.getName(), unsortedKeybind, primary, flush);
     }
 
-    public static void changeKeybind (KeyMap keyMap, Shortcut s, int packedKeybind, boolean primary, boolean flush) {
+    public static void changeKeybind(KeyMap keyMap, Shortcut s, int packedKeybind, boolean primary, boolean flush) {
         keyMap.changeKeybind(s, packedKeybind, primary);
         writeKeybindToPreferences(s.getName(), packedKeybind, primary, flush);
     }
 
-    public static int getKeybindFromPreferences (String name, boolean primary) {
+    public static int getKeybindFromPreferences(String name, boolean primary) {
         return preferences.getInteger(getShortcutPreferenceString(name, primary));
     }
 
-    public static void writeKeybindToPreferences (String name, int[] keybind, boolean primary, boolean flush) {
+    public static void writeKeybindToPreferences(String name, int[] keybind, boolean primary, boolean flush) {
         writeKeybindToPreferences(name, ShortcutManager.packKeybindUnsorted(keybind), primary, flush);
     }
 
-    public static void writeKeybindToPreferences (String name, int packed, boolean primary, boolean flush) {
+    public static void writeKeybindToPreferences(String name, int packed, boolean primary, boolean flush) {
         preferences.putInteger(getShortcutPreferenceString(name, primary), packed);
         if (flush)
             preferences.flush();
     }
 
-    public static Shortcut createShortcut (String name, String toolTipDesc, int[] defaultPrimaryKeybind,
-                                           int[] defaultSecondaryKeybind, int scope, Runnable runnable) {
+    public static Shortcut createShortcut(String name, String toolTipDesc, int[] defaultPrimaryKeybind,
+                                          int[] defaultSecondaryKeybind, int scope, Runnable runnable) {
         addKeybindReference(name, defaultPrimaryKeybind, defaultSecondaryKeybind);
         Shortcut s = new Shortcut(name, toolTipDesc, runnable);
         s.setScope(scope);
@@ -604,5 +571,38 @@ public class Utils {
                 emitter.getSprites().add(sprite);
             }
         }
+    }
+
+    private static void normalizeEmitterImagePaths(ParticleEmitter emitter, FileHandle particleDir) {
+        for (int i = 0; i < emitter.getImagePaths().size; i++) {
+            var originalPath = emitter.getImagePaths().get(i).replace('\\', '/');
+            var path = new File(originalPath).getName();
+            emitter.getImagePaths().set(i, path);
+            FileHandle imageHandle = particleDir.child(originalPath);
+            if (!imageHandle.exists()) imageHandle = particleDir.child(path);
+            fileHandles.put(path, imageHandle);
+            if (i < emitter.getSprites().size)
+                sprites.put(path, emitter.getSprites().get(i));
+        }
+    }
+
+    private static String getShortcutPreferenceString(String name, boolean primary) {
+        return primary ? name + "Shortcut" : name + "Shortcut" + "Secondary";
+    }
+
+    public enum UIscale {
+        SCALE_1X("1x", 1f), SCALE_1_5X("1.5x", 1 / 1.5f), SCALE_2X("2x", 1 / 2f), SCALE_3X("3x", 1 / 3f), SCALE_4X("4x", 1 / 4f);
+
+        public String text;
+        public float multiplier;
+
+        UIscale(String text, float multiplier) {
+            this.text = text;
+            this.multiplier = multiplier;
+        }
+    }
+
+    public interface VersionUpdateRunnable {
+        void versionUpdateAvailable(String newVersion);
     }
 }
