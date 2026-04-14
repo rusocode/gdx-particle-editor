@@ -24,7 +24,7 @@ configure(subprojects) {
   apply plugin: 'io.freefair.lombok'
   sourceCompatibility = 11
   compileJava {
-    options.incremental = true
+    options.incremental = false
   }
 }
 
