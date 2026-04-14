@@ -75,7 +75,7 @@ public class ImagesSubPanel extends Panel {
         addTooltip(textButton, "Set the image to the default round-faded image", Align.top, Align.top, tooltipBottomArrowStyle);
         onChange(textButton, () -> {
             var selectedFileHandles = new Array<FileHandle>();
-            selectedFileHandles.add(Gdx.files.internal("particle.png"));
+            selectedFileHandles.add(Gdx.files.internal("images/editor/particle.png"));
             UndoManager.add(new ImagesAddUndoable(selectedEmitter, list.getSelectedIndex() + 1, selectedFileHandles, "Add Default Image"));
             updateList();
             updateDisabled();
@@ -89,7 +89,7 @@ public class ImagesSubPanel extends Panel {
         addTooltip(textButton, "Set the image to the default for premultiplied alpha", Align.top, Align.top, tooltipBottomArrowStyle);
         onChange(textButton, () -> {
             var selectedFileHandles = new Array<FileHandle>();
-            selectedFileHandles.add(Gdx.files.internal("pre_particle.png"));
+            selectedFileHandles.add(Gdx.files.internal("images/editor/pre_particle.png"));
             UndoManager.add(new ImagesAddUndoable(selectedEmitter, list.getSelectedIndex() + 1, selectedFileHandles, "Add Default Image"));
             updateList();
             updateDisabled();

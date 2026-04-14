@@ -346,7 +346,7 @@ public class Core extends ApplicationAdapter {
         tooltips = new Array<>();
 
         activeEmitters = new OrderedMap<>();
-        loadParticle(Gdx.files.internal("flame.p"));
+        loadParticle(Gdx.files.internal("particles/editor/flame.p"));
         selectedEmitter = particleEffect.getEmitters().first();
 
         Listeners.initializeListeners();

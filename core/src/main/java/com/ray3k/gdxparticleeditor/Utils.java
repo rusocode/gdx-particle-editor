@@ -328,7 +328,7 @@ public class Utils {
         var emitter = new ParticleEmitter();
         emitter.setName("Untitled");
 
-        var fileHandle = Gdx.files.internal("particle.png");
+        var fileHandle = Gdx.files.internal("images/editor/particle.png");
         var path = fileHandle.name();
         emitter.getImagePaths().add(path);
         fileHandles.put(path, fileHandle);
@@ -495,31 +495,31 @@ public class Utils {
     }
 
     public static void addInternalImages() {
-        var defaultImageHandle = Gdx.files.internal("particle.png");
+        var defaultImageHandle = Gdx.files.internal("images/editor/particle.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("particle-star.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/particle-star.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("particle-ball1.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/particle-ball1.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("particle-ball2.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/particle-ball2.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("particle-ball3.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/particle-ball3.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("particle-ball4.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/particle-ball4.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("particle-cloud.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/particle-cloud.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("particle-fire.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/particle-fire.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("logo.png");
+        defaultImageHandle = Gdx.files.internal("images/editor/logo.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
     }
 
