@@ -115,12 +115,12 @@ behind: false
 premultipliedAlpha: false
 spriteMode: animated
 - Image Paths -
-../../images/finisterra/finisterra/spark_01.png
-../../images/finisterra/finisterra/spark_02.png
-../../images/finisterra/finisterra/spark_03.png
-../../images/finisterra/finisterra/spark_04.png
-../../images/finisterra/finisterra/spark_05.png
-../../images/finisterra/finisterra/spark_06.png
+../../images/finisterra/spark_01.png
+../../images/finisterra/spark_02.png
+../../images/finisterra/spark_03.png
+../../images/finisterra/spark_04.png
+../../images/finisterra/spark_05.png
+../../images/finisterra/spark_06.png
 
 
 Untitled
@@ -274,5 +274,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/finisterra/finisterra/flare_01.png
+../../images/finisterra/flare_01.png
 

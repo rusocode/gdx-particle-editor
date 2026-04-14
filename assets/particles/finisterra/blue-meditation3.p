@@ -351,5 +351,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/finisterra/finisterra/star_04.png
+../../images/finisterra/star_04.png
 

@@ -145,9 +145,9 @@ behind: false
 premultipliedAlpha: true
 spriteMode: animated
 - Image Paths -
-../../images/finisterra/finisterra/Rotated/muzzle_01_rotated.png
-../../images/finisterra/finisterra/Rotated/muzzle_02_rotated.png
-../../images/finisterra/finisterra/Rotated/muzzle_03_rotated.png
-../../images/finisterra/finisterra/Rotated/muzzle_04_rotated.png
-../../images/finisterra/finisterra/Rotated/muzzle_05_rotated.png
+../../images/finisterra/muzzle_01_rotated.png
+../../images/finisterra/muzzle_02_rotated.png
+../../images/finisterra/muzzle_03_rotated.png
+../../images/finisterra/muzzle_04_rotated.png
+../../images/finisterra/muzzle_05_rotated.png
 

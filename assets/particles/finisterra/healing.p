@@ -120,7 +120,7 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/finisterra/finisterra/light_03.png
+../../images/finisterra/light_03.png
 
 
 stars
@@ -281,6 +281,6 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/finisterra/finisterra/star_04.png
-../../images/finisterra/finisterra/star_02.png
+../../images/finisterra/star_04.png
+../../images/finisterra/star_02.png
 

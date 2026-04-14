@@ -146,5 +146,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/finisterra/finisterra/aura64x64.png
+../../images/finisterra/aura64x64.png
 

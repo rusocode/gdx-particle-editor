@@ -181,7 +181,7 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/finisterra/finisterra/polygon.png
+../../images/finisterra/polygon.png
 
 
 stars
@@ -367,5 +367,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/finisterra/finisterra/polygon.png
+../../images/finisterra/polygon.png
 

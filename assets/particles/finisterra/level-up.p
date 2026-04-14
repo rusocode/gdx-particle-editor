@@ -156,13 +156,13 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/finisterra/finisterra/star_01.png
-../../images/finisterra/finisterra/star_02.png
-../../images/finisterra/finisterra/star_03.png
-../../images/finisterra/finisterra/star_04.png
-../../images/finisterra/finisterra/star_05.png
-../../images/finisterra/finisterra/star_06.png
-../../images/finisterra/finisterra/star_07.png
-../../images/finisterra/finisterra/star_08.png
-../../images/finisterra/finisterra/star_09.png
+../../images/finisterra/star_01.png
+../../images/finisterra/star_02.png
+../../images/finisterra/star_03.png
+../../images/finisterra/star_04.png
+../../images/finisterra/star_05.png
+../../images/finisterra/star_06.png
+../../images/finisterra/star_07.png
+../../images/finisterra/star_08.png
+../../images/finisterra/star_09.png
 
