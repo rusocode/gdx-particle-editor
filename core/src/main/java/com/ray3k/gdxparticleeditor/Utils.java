@@ -129,7 +129,7 @@ public class Utils {
             if (fileHandle.type() != FileType.Internal) {
                 newParticleEffect.loadEmitters(fileHandle);
 
-                if (imageFileMap == null) newParticleEffect.loadEmitterImages(fileHandle.parent());
+                if (imageFileMap == null) loadEmitterImagesRelative(newParticleEffect, fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
                         var sprite = new Sprite(new Texture(imageFile.value));
@@ -259,7 +259,7 @@ public class Utils {
             if (fileHandle.type() != FileType.Internal) {
                 newParticleEffect.loadEmitters(fileHandle);
 
-                if (imageFileMap == null) newParticleEffect.loadEmitterImages(fileHandle.parent());
+                if (imageFileMap == null) loadEmitterImagesRelative(newParticleEffect, fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
                         var sprite = new Sprite(new Texture(imageFile.value));
@@ -570,6 +570,23 @@ public class Utils {
                 sprites.put(path, sprite);
                 emitter.getSprites().add(sprite);
             }
+        }
+    }
+
+    private static void loadEmitterImagesRelative(ParticleEffect effect, FileHandle particleDir) {
+        for (var emitter : effect.getEmitters()) {
+            if (emitter.getImagePaths().size == 0) continue;
+            var emitterSprites = new Array<Sprite>();
+            for (var imagePath : emitter.getImagePaths()) {
+                var normalizedPath = imagePath.replace('\\', '/');
+                FileHandle imageHandle = particleDir.child(normalizedPath);
+                if (!imageHandle.exists()) {
+                    var imageName = new File(normalizedPath).getName();
+                    imageHandle = particleDir.child(imageName);
+                }
+                emitterSprites.add(new Sprite(new Texture(imageHandle)));
+            }
+            emitter.setSprites(emitterSprites);
         }
     }
 
