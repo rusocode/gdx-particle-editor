@@ -1,13 +1,13 @@
 Untitled
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 3000.0
 lowMax: 3000.0
-- Count - 
+- Count -
 min: 1
 max: 1
-- Emission - 
+- Emission -
 lowMin: 1.0
 lowMax: 1.0
 highMin: 1.0
@@ -17,7 +17,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1000.0
@@ -32,16 +32,16 @@ timeline0: 0.0
 timeline1: 0.7123288
 timeline2: 1.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -51,7 +51,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -61,7 +61,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 128.0
@@ -73,26 +73,26 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.53424656
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: false
-- Angle - 
+- Angle -
 active: false
-- Rotation - 
+- Rotation -
 active: false
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: false
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.047058824
 colors1: 0.8627451
 colors2: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -106,7 +106,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.6438356
 timeline2: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -115,24 +115,24 @@ behind: false
 premultipliedAlpha: false
 spriteMode: animated
 - Image Paths -
-../../images/finisterra/spark_01.png
-../../images/finisterra/spark_02.png
-../../images/finisterra/spark_03.png
-../../images/finisterra/spark_04.png
-../../images/finisterra/spark_05.png
-../../images/finisterra/spark_06.png
+../../images/spark_01.png
+../../images/spark_02.png
+../../images/spark_03.png
+../../images/spark_04.png
+../../images/spark_05.png
+../../images/spark_06.png
 
 
 Untitled
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 1000.0
 lowMax: 1000.0
-- Count - 
+- Count -
 min: 1
 max: 30
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 60.0
@@ -148,7 +148,7 @@ timeline0: 0.0
 timeline1: 0.4178082
 timeline2: 0.7328767
 timeline3: 1.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 500.0
@@ -163,18 +163,18 @@ timeline0: 0.0
 timeline1: 0.6722222
 timeline2: 1.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: ellipse
 edges: false
 side: both
-- Spawn Width - 
+- Spawn Width -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 64.0
@@ -186,7 +186,7 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.44520548
-- Spawn Height - 
+- Spawn Height -
 lowMin: 40.0
 lowMax: 40.0
 highMin: 64.0
@@ -196,7 +196,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 64.0
@@ -208,9 +208,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.1849315
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: -150.0
 lowMax: -150.0
@@ -223,7 +223,7 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.7808219
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -238,20 +238,20 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.999
 timeline2: 1.0
-- Rotation - 
+- Rotation -
 active: false
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: false
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.047058824
 colors1: 0.8235294
 colors2: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -265,7 +265,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.49719626
 timeline2: 1.0
-- Options - 
+- Options -
 attached: true
 continuous: false
 aligned: false
@@ -274,5 +274,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/finisterra/flare_01.png
+../../images/flare_01.png
 

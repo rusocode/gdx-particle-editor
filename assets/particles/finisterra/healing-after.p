@@ -1,13 +1,13 @@
 stars
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 2000.0
 lowMax: 2000.0
-- Count - 
+- Count -
 min: 0
 max: 10
-- Emission - 
+- Emission -
 lowMin: 2.0
 lowMax: 2.0
 highMin: 5.0
@@ -17,7 +17,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 2000.0
@@ -28,18 +28,18 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: ellipse
 edges: true
 side: top
-- Spawn Width - 
+- Spawn Width -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 64.0
@@ -49,7 +49,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 32.0
@@ -59,7 +59,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 22.0
 lowMax: 22.0
 highMin: 32.0
@@ -73,9 +73,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.47260273
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -90,9 +90,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.48630136
 timeline2: 1.0
-- Angle - 
+- Angle -
 active: false
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -103,9 +103,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -120,7 +120,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.23287672
 timeline2: 0.9246575
-- Tint - 
+- Tint -
 colorsCount: 6
 colors0: 0.5411765
 colors1: 0.9843137
@@ -131,7 +131,7 @@ colors5: 0.65882355
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -147,7 +147,7 @@ timeline0: 0.0
 timeline1: 0.29452056
 timeline2: 0.43150684
 timeline3: 1.0
-- Options - 
+- Options -
 attached: true
 continuous: true
 aligned: false
@@ -156,6 +156,6 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/finisterra/star_04.png
-../../images/finisterra/star_02.png
+../../images/star_04.png
+../../images/star_02.png
 

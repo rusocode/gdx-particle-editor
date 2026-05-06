@@ -1,13 +1,13 @@
 neutron
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 10000.0
 lowMax: 10000.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 14.0
@@ -17,7 +17,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 500.0
@@ -28,10 +28,10 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: true
 lowMin: -5.0
 lowMax: 5.0
@@ -42,7 +42,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: -5.0
 lowMax: 5.0
@@ -53,9 +53,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -65,7 +65,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -75,7 +75,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 100.0
@@ -85,19 +85,19 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: false
-- Angle - 
+- Angle -
 active: false
-- Rotation - 
+- Rotation -
 active: false
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: false
-- Tint - 
+- Tint -
 colorsCount: 27
 colors0: 1.0
 colors1: 0.047058824
@@ -136,7 +136,7 @@ timeline5: 0.6506024
 timeline6: 0.7555938
 timeline7: 0.8915663
 timeline8: 1.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -146,7 +146,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Options - 
+- Options -
 attached: true
 continuous: true
 aligned: false
@@ -155,5 +155,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle-park/neutron-full.png
+../../images/neutron-full.png
 

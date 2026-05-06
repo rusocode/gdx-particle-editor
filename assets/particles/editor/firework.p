@@ -1,13 +1,13 @@
 Trail
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 200.0
 lowMax: 200.0
-- Count - 
+- Count -
 min: 0
 max: 2000
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 200.0
@@ -17,7 +17,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 720.0
@@ -28,16 +28,16 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -47,7 +47,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -57,7 +57,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 5.0
@@ -69,9 +69,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -88,7 +88,7 @@ timeline0: 0.0
 timeline1: 0.5833333
 timeline2: 0.89583373
 timeline3: 1.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -99,7 +99,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -110,18 +110,18 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: false
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 1.0
 colors1: 1.0
 colors2: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -133,7 +133,7 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -142,7 +142,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/editor/particle.png
+../../images/particle.png
 
 
 Red
@@ -150,13 +150,13 @@ Red
 active: true
 lowMin: 1000.0
 lowMax: 1000.0
-- Duration - 
+- Duration -
 lowMin: 100.0
 lowMax: 100.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1000.0
@@ -166,7 +166,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 900.0
@@ -177,12 +177,12 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: 200.0
 lowMax: 200.0
@@ -193,9 +193,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -205,7 +205,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -215,7 +215,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 10.0
@@ -229,9 +229,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -250,7 +250,7 @@ timeline1: 0.19444445
 timeline2: 0.29166666
 timeline3: 0.5000004
 timeline4: 1.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -261,7 +261,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 360.0
@@ -274,9 +274,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -291,14 +291,14 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.3402782
 timeline2: 1.0
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 1.0
 colors1: 0.0
 colors2: 0.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -310,7 +310,7 @@ scaling1: 0.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -319,7 +319,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/editor/particle-star.png
+../../images/particle-star.png
 
 
 Purple
@@ -327,13 +327,13 @@ Purple
 active: true
 lowMin: 1300.0
 lowMax: 1300.0
-- Duration - 
+- Duration -
 lowMin: 100.0
 lowMax: 100.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1000.0
@@ -343,7 +343,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 900.0
@@ -354,10 +354,10 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: true
 lowMin: 30.0
 lowMax: 30.0
@@ -368,7 +368,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: 200.0
 lowMax: 200.0
@@ -379,9 +379,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -391,7 +391,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -401,7 +401,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 10.0
@@ -415,9 +415,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -436,7 +436,7 @@ timeline1: 0.19444445
 timeline2: 0.29166666
 timeline3: 0.5000004
 timeline4: 1.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -447,7 +447,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 360.0
@@ -460,9 +460,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -477,14 +477,14 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.3402782
 timeline2: 1.0
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.6901961
 colors1: 0.0
 colors2: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -496,7 +496,7 @@ scaling1: 0.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -505,7 +505,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/editor/particle-star.png
+../../images/particle-star.png
 
 
 Blue
@@ -513,13 +513,13 @@ Blue
 active: true
 lowMin: 1700.0
 lowMax: 1700.0
-- Duration - 
+- Duration -
 lowMin: 100.0
 lowMax: 100.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1000.0
@@ -529,7 +529,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 900.0
@@ -540,10 +540,10 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: true
 lowMin: -30.0
 lowMax: -30.0
@@ -554,7 +554,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: 180.0
 lowMax: 180.0
@@ -565,9 +565,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -577,7 +577,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -587,7 +587,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 10.0
@@ -601,9 +601,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -622,7 +622,7 @@ timeline1: 0.19444445
 timeline2: 0.29166666
 timeline3: 0.5000004
 timeline4: 1.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -633,7 +633,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 360.0
@@ -646,9 +646,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -663,14 +663,14 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.3402782
 timeline2: 1.0
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.09803922
 colors1: 0.09803922
 colors2: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -682,7 +682,7 @@ scaling1: 0.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -691,7 +691,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/editor/particle-star.png
+../../images/particle-star.png
 
 
 Finish1
@@ -699,13 +699,13 @@ Finish1
 active: true
 lowMin: 2400.0
 lowMax: 2400.0
-- Duration - 
+- Duration -
 lowMin: 10.0
 lowMax: 10.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 3000.0
@@ -715,7 +715,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 2000.0
@@ -726,10 +726,10 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: true
 lowMin: -30.0
 lowMax: -30.0
@@ -740,7 +740,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: 180.0
 lowMax: 180.0
@@ -751,9 +751,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -763,7 +763,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -773,7 +773,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 10.0
@@ -787,9 +787,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -808,7 +808,7 @@ timeline1: 0.2777782
 timeline2: 0.38194486
 timeline3: 0.5555556
 timeline4: 1.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -819,7 +819,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 360.0
@@ -832,9 +832,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.9861115
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -849,14 +849,14 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.8352941
 colors1: 1.0
 colors2: 0.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -868,7 +868,7 @@ scaling1: 0.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -877,7 +877,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/editor/particle-star.png
+../../images/particle-star.png
 
 
 Finish2
@@ -885,13 +885,13 @@ Finish2
 active: true
 lowMin: 2800.0
 lowMax: 2800.0
-- Duration - 
+- Duration -
 lowMin: 10.0
 lowMax: 10.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 3000.0
@@ -901,7 +901,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 2000.0
@@ -912,10 +912,10 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: true
 lowMin: 30.0
 lowMax: 30.0
@@ -926,7 +926,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: 200.0
 lowMax: 200.0
@@ -937,9 +937,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -949,7 +949,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -959,7 +959,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 10.0
@@ -973,9 +973,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -994,7 +994,7 @@ timeline1: 0.2777782
 timeline2: 0.40972266
 timeline3: 0.6111115
 timeline4: 1.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -1005,7 +1005,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 360.0
@@ -1018,9 +1018,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.9861115
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -1035,14 +1035,14 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.8352941
 colors1: 1.0
 colors2: 0.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -1054,7 +1054,7 @@ scaling1: 0.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -1063,7 +1063,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/editor/particle-star.png
+../../images/particle-star.png
 
 
 Finish3
@@ -1071,13 +1071,13 @@ Finish3
 active: true
 lowMin: 3400.0
 lowMax: 3400.0
-- Duration - 
+- Duration -
 lowMin: 10.0
 lowMax: 10.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 3000.0
@@ -1087,7 +1087,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 2000.0
@@ -1098,10 +1098,10 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -1112,7 +1112,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: 180.0
 lowMax: 180.0
@@ -1123,9 +1123,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -1135,7 +1135,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -1145,7 +1145,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 10.0
@@ -1159,9 +1159,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -1180,7 +1180,7 @@ timeline1: 0.2777782
 timeline2: 0.4027778
 timeline3: 0.5555556
 timeline4: 1.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -1191,7 +1191,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 360.0
@@ -1204,9 +1204,9 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.9861115
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -1221,14 +1221,14 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.30555555
 timeline2: 1.0
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.8352941
 colors1: 1.0
 colors2: 0.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -1240,7 +1240,7 @@ scaling1: 0.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -1249,5 +1249,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/editor/particle-star.png
+../../images/particle-star.png
 

@@ -1,13 +1,13 @@
 Untitled
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 500.0
 lowMax: 500.0
-- Count - 
+- Count -
 min: 0
 max: 50
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 250.0
@@ -21,7 +21,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.69814813
 timeline2: 1.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 500.0
@@ -36,16 +36,16 @@ timeline0: 0.0
 timeline1: 0.66
 timeline2: 1.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -55,7 +55,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -65,7 +65,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 16.0
 lowMax: 16.0
 highMin: 48.0
@@ -75,9 +75,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: -401.0
 lowMax: -401.0
@@ -90,7 +90,7 @@ scaling1: 1.0
 timelineCount: 2
 timeline0: 0.0
 timeline1: 0.72602737
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -105,7 +105,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.999
 timeline2: 1.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 1.0
 lowMax: 360.0
@@ -120,18 +120,18 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.1369863
 timeline2: 1.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: false
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.6509804
 colors1: 1.0
 colors2: 0.20392157
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -147,7 +147,7 @@ timeline0: 0.0
 timeline1: 0.2260274
 timeline2: 0.739726
 timeline3: 1.0
-- Options - 
+- Options -
 attached: false
 continuous: false
 aligned: false
@@ -156,13 +156,13 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/finisterra/star_01.png
-../../images/finisterra/star_02.png
-../../images/finisterra/star_03.png
-../../images/finisterra/star_04.png
-../../images/finisterra/star_05.png
-../../images/finisterra/star_06.png
-../../images/finisterra/star_07.png
-../../images/finisterra/star_08.png
-../../images/finisterra/star_09.png
+../../images/star_01.png
+../../images/star_02.png
+../../images/star_03.png
+../../images/star_04.png
+../../images/star_05.png
+../../images/star_06.png
+../../images/star_07.png
+../../images/star_08.png
+../../images/star_09.png
 

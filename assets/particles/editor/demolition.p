@@ -1,13 +1,13 @@
 Demolition
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 1000.0
 lowMax: 1000.0
-- Count - 
+- Count -
 min: 0
 max: 200
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 50.0
@@ -17,7 +17,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 200.0
@@ -28,18 +28,18 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: ellipse
 edges: false
 side: both
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 100.0
@@ -49,7 +49,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 100.0
@@ -59,7 +59,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 30.0
@@ -69,9 +69,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -82,7 +82,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -93,7 +93,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -104,11 +104,11 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: false
-- Tint - 
+- Tint -
 colorsCount: 9
 colors0: 1.0
 colors1: 1.0
@@ -123,7 +123,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.10000006
 timeline2: 1.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -133,7 +133,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Options - 
+- Options -
 attached: false
 continuous: true
 aligned: false
@@ -142,8 +142,8 @@ behind: false
 premultipliedAlpha: false
 spriteMode: animated
 - Image Paths -
-../../images/editor/particle-ball1.png
-../../images/editor/particle-ball2.png
-../../images/editor/particle-ball3.png
-../../images/editor/particle-ball4.png
+../../images/particle-ball1.png
+../../images/particle-ball2.png
+../../images/particle-ball3.png
+../../images/particle-ball4.png
 

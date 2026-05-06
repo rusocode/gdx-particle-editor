@@ -153,8 +153,8 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/particle-park/circle1.png
-../../images/particle-park/blob.png
+../../images/circle1.png
+../../images/blob.png
 
 
 blood
@@ -295,5 +295,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle-park/gore.png
+../../images/gore.png
 

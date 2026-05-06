@@ -346,10 +346,11 @@ public class Core extends ApplicationAdapter {
         tooltips = new Array<>();
 
         activeEmitters = new OrderedMap<>();
-        loadParticle(Gdx.files.internal("particles/editor/flame.p"));
-        selectedEmitter = particleEffect.getEmitters().first();
 
         Listeners.initializeListeners();
+
+        loadParticle(Gdx.files.internal("particles/editor/flame.p"));
+        if (particleEffect != null) selectedEmitter = particleEffect.getEmitters().first();
 
         bgColor.set(skin.getColor("bg"));
 

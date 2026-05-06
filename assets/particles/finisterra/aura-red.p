@@ -3,13 +3,13 @@ base1
 active: true
 lowMin: 0.0
 lowMax: 0.0
-- Duration - 
+- Duration -
 lowMin: 5000.0
 lowMax: 5000.0
-- Count - 
+- Count -
 min: 1
 max: 4
-- Emission - 
+- Emission -
 lowMin: 1.0
 lowMax: 1.0
 highMin: 1.0
@@ -25,7 +25,7 @@ timeline0: 0.0
 timeline1: 0.001
 timeline2: 0.9246575
 timeline3: 1.0
-- Life - 
+- Life -
 lowMin: 2250.0
 lowMax: 2250.0
 highMin: 2250.0
@@ -36,12 +36,12 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: true
 lowMin: 10.0
 lowMax: 10.0
@@ -52,9 +52,9 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Shape - 
+- Spawn Shape -
 shape: point
-- Spawn Width - 
+- Spawn Width -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -64,7 +64,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 0.0
@@ -74,7 +74,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 128.0
@@ -94,7 +94,7 @@ timeline2: 0.34931508
 timeline3: 0.5410959
 timeline4: 0.7123288
 timeline5: 0.89041096
-- Y Scale - 
+- Y Scale -
 active: true
 lowMin: 12.0
 lowMax: 12.0
@@ -113,24 +113,24 @@ timeline1: 0.16438356
 timeline2: 0.34246576
 timeline3: 0.55479455
 timeline4: 1.0
-- Velocity - 
+- Velocity -
 active: false
-- Angle - 
+- Angle -
 active: false
-- Rotation - 
+- Rotation -
 active: false
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: false
-- Tint - 
+- Tint -
 colorsCount: 3
 colors0: 0.9764706
 colors1: 0.0
 colors2: 0.0
 timelineCount: 1
 timeline0: 0.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -148,7 +148,7 @@ timeline1: 0.26712328
 timeline2: 0.5273973
 timeline3: 0.77397263
 timeline4: 0.96575344
-- Options - 
+- Options -
 attached: true
 continuous: true
 aligned: false
@@ -157,5 +157,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/finisterra/circle_01.png
+../../images/circle_01.png
 

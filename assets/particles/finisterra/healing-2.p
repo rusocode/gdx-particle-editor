@@ -1,13 +1,13 @@
 stars
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 2000.0
 lowMax: 2000.0
-- Count - 
+- Count -
 min: 0
 max: 6
-- Emission - 
+- Emission -
 lowMin: 2.0
 lowMax: 2.0
 highMin: 2.0
@@ -17,7 +17,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 2000.0
@@ -28,18 +28,18 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: ellipse
 edges: false
 side: top
-- Spawn Width - 
+- Spawn Width -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 50.0
@@ -49,7 +49,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 32.0
@@ -59,7 +59,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 12.0
 lowMax: 12.0
 highMin: 12.0
@@ -73,9 +73,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.47260273
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -92,7 +92,7 @@ timeline0: 0.0
 timeline1: 0.39041096
 timeline2: 0.7191781
 timeline3: 0.9246575
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -103,7 +103,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: -20.0
 lowMax: 20.0
@@ -120,9 +120,9 @@ timeline0: 0.0
 timeline1: 0.26712328
 timeline2: 0.65068495
 timeline3: 1.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -139,7 +139,7 @@ timeline0: 0.0
 timeline1: 0.25342464
 timeline2: 0.44520548
 timeline3: 0.96575344
-- Tint - 
+- Tint -
 colorsCount: 9
 colors0: 0.9843137
 colors1: 0.6117647
@@ -154,7 +154,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.26968175
 timeline2: 1.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -172,7 +172,7 @@ timeline1: 0.0890411
 timeline2: 0.28082192
 timeline3: 0.60273975
 timeline4: 0.96575344
-- Options - 
+- Options -
 attached: true
 continuous: true
 aligned: true
@@ -181,19 +181,19 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/finisterra/polygon.png
+../../images/polygon.png
 
 
 stars
 - Delay -
 active: false
-- Duration - 
+- Duration -
 lowMin: 2000.0
 lowMax: 2000.0
-- Count - 
+- Count -
 min: 0
 max: 6
-- Emission - 
+- Emission -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 2.0
@@ -203,7 +203,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Life - 
+- Life -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 2000.0
@@ -214,18 +214,18 @@ scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
 independent: false
-- Life Offset - 
+- Life Offset -
 active: false
 independent: false
-- X Offset - 
+- X Offset -
 active: false
-- Y Offset - 
+- Y Offset -
 active: false
-- Spawn Shape - 
+- Spawn Shape -
 shape: ellipse
 edges: false
 side: top
-- Spawn Width - 
+- Spawn Width -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 50.0
@@ -235,7 +235,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Spawn Height - 
+- Spawn Height -
 lowMin: 32.0
 lowMax: 32.0
 highMin: 32.0
@@ -245,7 +245,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- X Scale - 
+- X Scale -
 lowMin: 12.0
 lowMax: 12.0
 highMin: 12.0
@@ -259,9 +259,9 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.47260273
 timeline2: 1.0
-- Y Scale - 
+- Y Scale -
 active: false
-- Velocity - 
+- Velocity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -278,7 +278,7 @@ timeline0: 0.0
 timeline1: 0.39041096
 timeline2: 0.7191781
 timeline3: 0.9246575
-- Angle - 
+- Angle -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -289,7 +289,7 @@ scalingCount: 1
 scaling0: 1.0
 timelineCount: 1
 timeline0: 0.0
-- Rotation - 
+- Rotation -
 active: true
 lowMin: -20.0
 lowMax: 20.0
@@ -306,9 +306,9 @@ timeline0: 0.0
 timeline1: 0.26712328
 timeline2: 0.65068495
 timeline3: 1.0
-- Wind - 
+- Wind -
 active: false
-- Gravity - 
+- Gravity -
 active: true
 lowMin: 0.0
 lowMax: 0.0
@@ -325,7 +325,7 @@ timeline0: 0.0
 timeline1: 0.25342464
 timeline2: 0.44520548
 timeline3: 0.96575344
-- Tint - 
+- Tint -
 colorsCount: 9
 colors0: 0.54509807
 colors1: 0.77254903
@@ -340,7 +340,7 @@ timelineCount: 3
 timeline0: 0.0
 timeline1: 0.26968175
 timeline2: 1.0
-- Transparency - 
+- Transparency -
 lowMin: 0.0
 lowMax: 0.0
 highMin: 1.0
@@ -358,7 +358,7 @@ timeline1: 0.0890411
 timeline2: 0.28082192
 timeline3: 0.60273975
 timeline4: 0.96575344
-- Options - 
+- Options -
 attached: true
 continuous: true
 aligned: true
@@ -367,5 +367,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/finisterra/polygon.png
+../../images/polygon.png
 
