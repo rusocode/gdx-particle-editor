@@ -123,5 +123,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/pentagram.png
+../../images-large/pentagram.png
 

@@ -156,13 +156,13 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/star_01.png
-../../images/star_02.png
-../../images/star_03.png
-../../images/star_04.png
-../../images/star_05.png
-../../images/star_06.png
-../../images/star_07.png
-../../images/star_08.png
-../../images/star_09.png
+../../images-large/star_01.png
+../../images-large/star_02.png
+../../images-large/star_03.png
+../../images-large/star_04.png
+../../images-large/star_05.png
+../../images-large/star_06.png
+../../images-large/star_07.png
+../../images-large/star_08.png
+../../images-large/star_09.png
 

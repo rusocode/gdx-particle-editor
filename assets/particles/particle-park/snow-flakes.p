@@ -143,5 +143,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/snow-flake.png
+snow-flake.png
 

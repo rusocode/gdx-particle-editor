@@ -129,5 +129,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle.png
+particle.png
 

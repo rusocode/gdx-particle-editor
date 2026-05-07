@@ -120,5 +120,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star-real.png
+../../images-large/star-real.png
 

@@ -142,8 +142,8 @@ behind: false
 premultipliedAlpha: false
 spriteMode: animated
 - Image Paths -
-../../images/particle-ball1.png
-../../images/particle-ball2.png
-../../images/particle-ball3.png
-../../images/particle-ball4.png
+particle-ball1.png
+particle-ball2.png
+particle-ball3.png
+particle-ball4.png
 

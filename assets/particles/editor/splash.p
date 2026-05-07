@@ -149,7 +149,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/particle.png
+particle.png
 
 
 Blurp
@@ -294,5 +294,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/particle.png
+particle.png
 

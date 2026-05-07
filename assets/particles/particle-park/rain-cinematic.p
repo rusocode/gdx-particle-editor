@@ -147,5 +147,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/rain-cinematic.png
+../../images-large/rain-cinematic.png
 

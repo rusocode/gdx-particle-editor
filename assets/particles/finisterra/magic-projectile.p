@@ -145,9 +145,9 @@ behind: false
 premultipliedAlpha: true
 spriteMode: animated
 - Image Paths -
-../../images/muzzle_01_rotated.png
-../../images/muzzle_02_rotated.png
-../../images/muzzle_03_rotated.png
-../../images/muzzle_04_rotated.png
-../../images/muzzle_05_rotated.png
+../../images-large/muzzle_01_rotated.png
+../../images-large/muzzle_02_rotated.png
+../../images-large/muzzle_03_rotated.png
+../../images-large/muzzle_04_rotated.png
+../../images-large/muzzle_05_rotated.png
 

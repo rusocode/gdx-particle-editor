@@ -120,7 +120,7 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/light_03.png
+../../images-large/light_03.png
 
 
 stars
@@ -281,5 +281,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/flare_01.png
+../../images-large/flare_01.png
 

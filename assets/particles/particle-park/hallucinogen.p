@@ -155,6 +155,6 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/neutron.png
-../../images/neutron-full.png
+neutron.png
+neutron-full.png
 

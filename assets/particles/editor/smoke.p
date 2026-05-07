@@ -142,5 +142,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle-cloud.png
+particle-cloud.png
 

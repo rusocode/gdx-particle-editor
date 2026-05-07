@@ -155,5 +155,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 

@@ -151,7 +151,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 
 
 Explosion
@@ -312,5 +312,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle-fire.png
+particle-fire.png
 

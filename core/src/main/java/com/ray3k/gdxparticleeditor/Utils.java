@@ -13,7 +13,6 @@ import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
 import com.badlogic.gdx.graphics.g2d.ParticleEmitter.SpriteMode;
 import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.net.HttpRequestBuilder;
@@ -132,7 +131,9 @@ public class Utils {
                 if (imageFileMap == null) loadEmitterImagesRelative(newParticleEffect, fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
-                        var sprite = new Sprite(new Texture(imageFile.value));
+                        var regionName = imageFile.value.nameWithoutExtension();
+                        var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                        var sprite = region != null ? new Sprite(region) : new Sprite(new Texture(imageFile.value));
                         sprites.put(imageFile.key, sprite);
                     }
                     fileHandles.putAll(imageFileMap);
@@ -151,9 +152,10 @@ public class Utils {
                     }
                 }
             } else {
-                var textureAtlas = new TextureAtlas(Gdx.files.internal("default/default.atlas"));
-                newParticleEffect.load(fileHandle, textureAtlas);
-                addInternalImages();
+                newParticleEffect.loadEmitters(fileHandle);
+                loadEmitterImagesRelative(newParticleEffect,
+                    Gdx.files.internal("images"),
+                    Gdx.files.internal("images-large"));
             }
         } catch (Exception e) {
             Gdx.graphics.setSystemCursor(SystemCursor.Arrow);
@@ -236,10 +238,13 @@ public class Utils {
     public static void disposeParticleEffect() {
         if (particleEffect == null)
             return;
+        var atlasTextures = defaultAtlas != null ? defaultAtlas.getTextures() : null;
         for (int i = 0, n = particleEffect.getEmitters().size; i < n; i++) {
             ParticleEmitter emitter = particleEffect.getEmitters().get(i);
             for (Sprite sprite : emitter.getSprites()) {
-                sprite.getTexture().dispose();
+                var texture = sprite.getTexture();
+                if (atlasTextures == null || !atlasTextures.contains(texture))
+                    texture.dispose();
             }
         }
     }
@@ -262,7 +267,9 @@ public class Utils {
                 if (imageFileMap == null) loadEmitterImagesRelative(newParticleEffect, fileHandle.parent());
                 else {
                     for (var imageFile : imageFileMap) {
-                        var sprite = new Sprite(new Texture(imageFile.value));
+                        var regionName = imageFile.value.nameWithoutExtension();
+                        var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                        var sprite = region != null ? new Sprite(region) : new Sprite(new Texture(imageFile.value));
                         sprites.put(imageFile.value.name(), sprite);
                     }
                     fileHandles.putAll(imageFileMap);
@@ -281,9 +288,10 @@ public class Utils {
                     }
                 }
             } else {
-                var textureAtlas = new TextureAtlas(Gdx.files.internal("default/default.atlas"));
-                newParticleEffect.load(fileHandle, textureAtlas);
-                addInternalImages();
+                newParticleEffect.loadEmitters(fileHandle);
+                loadEmitterImagesRelative(newParticleEffect,
+                    Gdx.files.internal("images"),
+                    Gdx.files.internal("images-large"));
             }
         } catch (Exception e) {
             Gdx.graphics.setSystemCursor(SystemCursor.Arrow);
@@ -332,7 +340,8 @@ public class Utils {
         var path = fileHandle.name();
         emitter.getImagePaths().add(path);
         fileHandles.put(path, fileHandle);
-        var sprite = new Sprite(new Texture(fileHandle));
+        var particleRegion = defaultAtlas != null ? defaultAtlas.findRegion("particle") : null;
+        var sprite = particleRegion != null ? new Sprite(particleRegion) : new Sprite(new Texture(fileHandle));
         sprites.put(path, sprite);
         emitter.getSprites().add(sprite);
 
@@ -498,7 +507,7 @@ public class Utils {
         var defaultImageHandle = Gdx.files.internal("images/particle.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("images/star.png");
+        defaultImageHandle = Gdx.files.internal("images/star-1.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
         defaultImageHandle = Gdx.files.internal("images/particle-ball1.png");
@@ -559,14 +568,19 @@ public class Utils {
     public static void reloadSprites() {
         UndoManager.clear();
 
+        var atlasTextures = defaultAtlas != null ? defaultAtlas.getTextures() : null;
         for (var sprite : sprites.values()) {
-            sprite.getTexture().dispose();
+            var texture = sprite.getTexture();
+            if (atlasTextures == null || !atlasTextures.contains(texture))
+                texture.dispose();
         }
         sprites.clear();
         for (var emitter : activeEmitters.keys()) {
             emitter.getSprites().clear();
             for (var path : emitter.getImagePaths()) {
-                var sprite = new Sprite(new Texture(fileHandles.get(path)));
+                var regionName = path.contains(".") ? path.substring(0, path.lastIndexOf('.')) : path;
+                var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                var sprite = region != null ? new Sprite(region) : new Sprite(new Texture(fileHandles.get(path)));
                 sprites.put(path, sprite);
                 emitter.getSprites().add(sprite);
             }
@@ -574,17 +588,26 @@ public class Utils {
     }
 
     private static void loadEmitterImagesRelative(ParticleEffect effect, FileHandle particleDir) {
+        loadEmitterImagesRelative(effect, particleDir, null);
+    }
+
+    private static void loadEmitterImagesRelative(ParticleEffect effect, FileHandle particleDir, FileHandle fallbackDir) {
         for (var emitter : effect.getEmitters()) {
             if (emitter.getImagePaths().size == 0) continue;
             var emitterSprites = new Array<Sprite>();
             for (var imagePath : emitter.getImagePaths()) {
                 var normalizedPath = imagePath.replace('\\', '/');
-                FileHandle imageHandle = particleDir.child(normalizedPath);
-                if (!imageHandle.exists()) {
-                    var imageName = new File(normalizedPath).getName();
-                    imageHandle = particleDir.child(imageName);
+                var imageName = new File(normalizedPath).getName();
+                var regionName = imageName.contains(".") ? imageName.substring(0, imageName.lastIndexOf('.')) : imageName;
+                var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                if (region != null) {
+                    emitterSprites.add(new Sprite(region));
+                } else {
+                    FileHandle imageHandle = particleDir.child(normalizedPath);
+                    if (!imageHandle.exists()) imageHandle = particleDir.child(imageName);
+                    if (!imageHandle.exists() && fallbackDir != null) imageHandle = fallbackDir.child(imageName);
+                    emitterSprites.add(new Sprite(new Texture(imageHandle)));
                 }
-                emitterSprites.add(new Sprite(new Texture(imageHandle)));
             }
             emitter.setSprites(emitterSprites);
         }
@@ -597,6 +620,8 @@ public class Utils {
             emitter.getImagePaths().set(i, path);
             FileHandle imageHandle = particleDir.child(originalPath);
             if (!imageHandle.exists()) imageHandle = particleDir.child(path);
+            if (!imageHandle.exists()) imageHandle = Gdx.files.internal("images/" + path);
+            if (!imageHandle.exists()) imageHandle = Gdx.files.internal("images-large/" + path);
             fileHandles.put(path, imageHandle);
             if (i < emitter.getSprites().size)
                 sprites.put(path, emitter.getSprites().get(i));

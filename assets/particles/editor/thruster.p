@@ -152,5 +152,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle-fire.png
+particle-fire.png
 

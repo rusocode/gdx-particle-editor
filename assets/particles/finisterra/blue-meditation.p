@@ -141,7 +141,7 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/circle_01.png
+../../images-large/circle_01.png
 
 
 Untitled
@@ -288,5 +288,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/symbol_02.png
+../../images-large/symbol_02.png
 

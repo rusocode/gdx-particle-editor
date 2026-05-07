@@ -153,8 +153,8 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/circle1.png
-../../images/blob.png
+circle1.png
+blob.png
 
 
 blood
@@ -295,5 +295,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/gore.png
+gore.png
 

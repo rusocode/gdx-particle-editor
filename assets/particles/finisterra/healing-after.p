@@ -156,6 +156,6 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/star_04.png
-../../images/star_02.png
+../../images-large/star_04.png
+../../images-large/star_02.png
 

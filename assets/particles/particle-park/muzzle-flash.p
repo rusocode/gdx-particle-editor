@@ -139,5 +139,5 @@ premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
 ../../images/circle2.png
-../../images/dash.png
+../../images-large/dash.png
 

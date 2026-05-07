@@ -146,7 +146,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/circle4.png
+circle4.png
 
 
 flame
@@ -297,5 +297,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/circle3.png
+circle3.png
 

@@ -149,7 +149,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/circle1.png
+circle1.png
 
 
 blurp
@@ -294,5 +294,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/circle1.png
+circle1.png
 

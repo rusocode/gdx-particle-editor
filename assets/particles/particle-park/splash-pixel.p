@@ -136,7 +136,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/rect.png
+rect.png
 
 
 blurp
@@ -279,5 +279,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/rect.png
+rect.png
 

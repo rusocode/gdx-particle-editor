@@ -140,5 +140,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/rain-blurred.png
+rain-blurred.png
 

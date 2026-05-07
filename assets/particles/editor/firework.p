@@ -142,7 +142,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle.png
+particle.png
 
 
 Red
@@ -319,7 +319,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 
 
 Purple
@@ -505,7 +505,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 
 
 Blue
@@ -691,7 +691,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 
 
 Finish1
@@ -877,7 +877,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 
 
 Finish2
@@ -1063,7 +1063,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 
 
 Finish3
@@ -1249,5 +1249,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star.png
+star-1.png
 

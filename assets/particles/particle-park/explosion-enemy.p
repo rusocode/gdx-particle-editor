@@ -136,9 +136,9 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/explosion-1.png
-../../images/explosion-2.png
-../../images/explosion-3.png
+explosion-1.png
+explosion-2.png
+explosion-3.png
 
 
 explosion
@@ -281,9 +281,9 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/explosion-1.png
-../../images/explosion-2.png
-../../images/explosion-3.png
+explosion-1.png
+explosion-2.png
+explosion-3.png
 
 
 explosion
@@ -426,9 +426,9 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/explosion-1.png
-../../images/explosion-2.png
-../../images/explosion-3.png
+explosion-1.png
+explosion-2.png
+explosion-3.png
 
 
 explosion
@@ -571,9 +571,9 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/explosion-1.png
-../../images/explosion-2.png
-../../images/explosion-3.png
+explosion-1.png
+explosion-2.png
+explosion-3.png
 
 
 explosion
@@ -716,7 +716,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/explosion-1.png
-../../images/explosion-2.png
-../../images/explosion-3.png
+explosion-1.png
+explosion-2.png
+explosion-3.png
 

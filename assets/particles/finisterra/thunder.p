@@ -115,12 +115,12 @@ behind: false
 premultipliedAlpha: false
 spriteMode: animated
 - Image Paths -
-../../images/spark_01.png
-../../images/spark_02.png
-../../images/spark_03.png
-../../images/spark_04.png
-../../images/spark_05.png
-../../images/spark_06.png
+../../images-large/spark_01.png
+../../images-large/spark_02.png
+../../images-large/spark_03.png
+../../images-large/spark_04.png
+../../images-large/spark_05.png
+../../images-large/spark_06.png
 
 
 Untitled
@@ -274,5 +274,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/flare_01.png
+../../images-large/flare_01.png
 

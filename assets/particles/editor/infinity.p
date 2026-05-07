@@ -141,7 +141,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle.png
+particle.png
 
 
 Infinity right
@@ -287,7 +287,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle.png
+particle.png
 
 
 Infinity top
@@ -433,7 +433,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle.png
+particle.png
 
 
 Infinity bottom
@@ -579,5 +579,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle.png
+particle.png
 

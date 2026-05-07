@@ -142,7 +142,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/firework.png
+firework.png
 
 
 firework
@@ -270,5 +270,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/firework.png
+firework.png
 

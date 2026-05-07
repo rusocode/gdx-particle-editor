@@ -123,5 +123,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/pentagram-glow.png
+../../images-large/pentagram-glow.png
 

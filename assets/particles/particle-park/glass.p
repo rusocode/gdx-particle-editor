@@ -153,10 +153,10 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/glass-1.png
-../../images/glass-2.png
-../../images/glass-3.png
-../../images/glass-4.png
-../../images/glass-5.png
-../../images/glass-6.png
+glass-1.png
+glass-2.png
+glass-3.png
+glass-4.png
+glass-5.png
+glass-6.png
 

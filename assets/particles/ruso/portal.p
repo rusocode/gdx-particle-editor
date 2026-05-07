@@ -125,5 +125,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/circle-gaussian-0.8.png
+circle-gaussian-0.8.png
 

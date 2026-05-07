@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
 import com.badlogic.gdx.graphics.g2d.ParticleEmitter.ScaledNumericValue;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -181,6 +182,12 @@ public class Core extends ApplicationAdapter {
     public static ObjectMap<String, Sprite> sprites;
 
     /**
+     * The shared texture atlas containing all bundled images from assets/images/. Loaded once at startup and shared
+     * across all particle loads to avoid redundant GPU uploads and incorrect disposal.
+     */
+    public static TextureAtlas defaultAtlas;
+
+    /**
      * The default name to be used when the user saves the ParticleEffect.
      */
     public static String defaultFileName;
@@ -346,6 +353,7 @@ public class Core extends ApplicationAdapter {
         tooltips = new Array<>();
 
         activeEmitters = new OrderedMap<>();
+        defaultAtlas = new TextureAtlas(Gdx.files.internal("packing.atlas"));
 
         Listeners.initializeListeners();
 
@@ -365,6 +373,11 @@ public class Core extends ApplicationAdapter {
             Gdx.graphics.setForegroundFPS(fps);
             Gdx.graphics.setVSync(fps == Gdx.graphics.getDisplayMode().refreshRate);
         }
+    }
+
+    @Override
+    public void dispose() {
+        if (defaultAtlas != null) defaultAtlas.dispose();
     }
 
     public static void populate(String openTable) {

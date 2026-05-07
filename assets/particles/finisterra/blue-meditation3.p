@@ -173,12 +173,12 @@ behind: false
 premultipliedAlpha: true
 spriteMode: random
 - Image Paths -
-../../images/flame_01.png
-../../images/flame_02.png
-../../images/flame_03.png
-../../images/flame_04.png
-../../images/flame_05.png
-../../images/flame_06.png
+../../images-large/flame_01.png
+../../images-large/flame_02.png
+../../images-large/flame_03.png
+../../images-large/flame_04.png
+../../images-large/flame_05.png
+../../images-large/flame_06.png
 
 
 Untitled
@@ -351,5 +351,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/star_04.png
+../../images-large/star_04.png
 

@@ -136,7 +136,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
-../../images/thrust-1.png
-../../images/thrust-2.png
-../../images/thrust-3.png
+thrust-1.png
+thrust-2.png
+thrust-3.png
 
