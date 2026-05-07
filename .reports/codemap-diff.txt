@@ -1,0 +1,35 @@
+Codemap Report — 2026-05-07
+===========================
+
+Status: INITIAL GENERATION (no previous codemaps existed)
+
+Files Created
+-------------
+docs/CODEMAPS/architecture.md
+docs/CODEMAPS/frontend.md
+docs/CODEMAPS/dependencies.md
+
+Scan Summary
+------------
+Total Java files scanned : 120
+Total estimated LOC      : 24,050
+Packages mapped          : 16
+Entry point              : com.ray3k.gdxparticleeditor.lwjgl3.Lwjgl3Launcher.main()
+
+Architecture Notes
+------------------
+- Single-module Gradle project (core)
+- No automated tests (manual UI testing only)
+- Static singletons in Core.java — no DI framework
+- 5 libGDX classes vendored locally with patches
+- Stripe widget library vendored in-source (com.ray3k.stripe)
+- 23 Undoable implementations covering all editor mutations
+
+New Dependencies Detected (vs empty baseline)
+----------------------------------------------
+libGDX 1.12.1, LWJGL3, TenPatch 5.2.3, Stripe 1.4.5,
+ShapeDrawer 2.5.0, Colorful 0.8.4, TinyFD 3.3.2, Lombok 1.18.36
+
+Staleness Warnings
+------------------
+None — initial generation.
