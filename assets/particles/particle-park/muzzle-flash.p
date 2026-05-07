@@ -138,6 +138,6 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/circle2.png
+circle2.png
 ../../images-large/dash.png
 

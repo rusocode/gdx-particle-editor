@@ -155,5 +155,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/cloud.png
+cloud.png
 
