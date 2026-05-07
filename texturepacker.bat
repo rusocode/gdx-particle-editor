@@ -1,0 +1,1 @@
+java -jar texturepacker.jar assets/images assets/default default
