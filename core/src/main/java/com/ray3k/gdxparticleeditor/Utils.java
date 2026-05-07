@@ -498,7 +498,7 @@ public class Utils {
         var defaultImageHandle = Gdx.files.internal("images/particle.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("images/particle-star.png");
+        defaultImageHandle = Gdx.files.internal("images/star.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
         defaultImageHandle = Gdx.files.internal("images/particle-ball1.png");

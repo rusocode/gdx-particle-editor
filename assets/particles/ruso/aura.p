@@ -130,5 +130,5 @@ premultipliedAlpha: false
 spriteMode: random
 - Image Paths -
 ../../images/circle-power-0.5.png
-../../images/particle-star.png
+../../images/star.png
 

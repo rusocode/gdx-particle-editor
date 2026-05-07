@@ -151,7 +151,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-../../images/particle-star.png
+../../images/star.png
 
 
 Explosion

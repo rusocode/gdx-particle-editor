@@ -17,7 +17,7 @@ particle-cloud
 bounds:131,197,128,128
 particle-fire
 bounds:131,67,128,128
-particle-star
+star
 bounds:1,1,64,64
 pre_particle
 bounds:261,423,32,32
