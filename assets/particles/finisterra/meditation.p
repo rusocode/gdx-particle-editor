@@ -161,5 +161,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-particle.png
+circle-gaussian-0.8.png
 

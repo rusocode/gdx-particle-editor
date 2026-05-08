@@ -143,7 +143,7 @@ continuous: true
 aligned: false
 additive: true
 behind: false
-premultipliedAlpha: true
+premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
 aura.png
