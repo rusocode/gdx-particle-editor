@@ -1,4 +1,4 @@
-base1
+aura
 - Delay -
 active: true
 lowMin: 0.0
@@ -146,5 +146,5 @@ behind: false
 premultipliedAlpha: true
 spriteMode: single
 - Image Paths -
-../../images/aura64x64.png
+aura.png
 
