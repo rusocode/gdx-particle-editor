@@ -357,7 +357,7 @@ public class Core extends ApplicationAdapter {
 
         Listeners.initializeListeners();
 
-        loadParticle(Gdx.files.internal("particles/editor/flame.p"));
+        loadParticle(Gdx.files.internal("particles/gdx/flame.p"));
         if (particleEffect != null) selectedEmitter = particleEffect.getEmitters().first();
 
         bgColor.set(skin.getColor("bg"));
