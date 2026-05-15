@@ -353,7 +353,7 @@ public class Core extends ApplicationAdapter {
         tooltips = new Array<>();
 
         activeEmitters = new OrderedMap<>();
-        defaultAtlas = new TextureAtlas(Gdx.files.internal("packing.atlas"));
+        defaultAtlas = new TextureAtlas(Gdx.files.internal("particles.atlas"));
 
         Listeners.initializeListeners();
 
