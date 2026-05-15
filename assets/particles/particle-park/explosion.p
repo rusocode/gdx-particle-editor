@@ -273,7 +273,7 @@ premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
 particle.png
-circle2.png
+circle-2.png
 
 
 spark
@@ -406,5 +406,5 @@ premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
 particle.png
-circle2.png
+circle-2.png
 

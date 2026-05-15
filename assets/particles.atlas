@@ -18,6 +18,34 @@ blob
   orig: 27, 41
   offset: 0, 0
   index: -1
+circle-1
+  rotate: false
+  xy: 174, 2
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+circle-2
+  rotate: false
+  xy: 238, 115
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+circle-3
+  rotate: false
+  xy: 304, 205
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+circle-4
+  rotate: false
+  xy: 366, 198
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
 circle-gaussian-0.8
   rotate: false
   xy: 775, 390
@@ -30,34 +58,6 @@ circle-power-0.5
   xy: 809, 390
   size: 32, 32
   orig: 32, 32
-  offset: 0, 0
-  index: -1
-circle1
-  rotate: false
-  xy: 174, 2
-  size: 60, 60
-  orig: 60, 60
-  offset: 0, 0
-  index: -1
-circle2
-  rotate: false
-  xy: 238, 115
-  size: 60, 60
-  orig: 60, 60
-  offset: 0, 0
-  index: -1
-circle3
-  rotate: false
-  xy: 304, 205
-  size: 60, 60
-  orig: 60, 60
-  offset: 0, 0
-  index: -1
-circle4
-  rotate: false
-  xy: 366, 198
-  size: 60, 60
-  orig: 60, 60
   offset: 0, 0
   index: -1
 cloud
@@ -207,28 +207,28 @@ particle
   orig: 32, 32
   offset: 0, 0
   index: -1
-particle-ball1
+particle-ball-1
   rotate: false
   xy: 2, 373
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
-particle-ball2
+particle-ball-2
   rotate: false
   xy: 2, 243
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
-particle-ball3
+particle-ball-3
   rotate: false
   xy: 132, 373
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
-particle-ball4
+particle-ball-4
   rotate: false
   xy: 2, 113
   size: 128, 128
@@ -284,16 +284,23 @@ rect
   orig: 9, 9
   offset: 0, 0
   index: -1
-snow-flake
+snow-flake-1
   rotate: false
   xy: 392, 410
   size: 97, 91
   orig: 97, 91
   offset: 0, 0
   index: -1
-star-1
+snow-flake-2
   rotate: false
   xy: 592, 349
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+star-1
+  rotate: false
+  xy: 238, 177
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -310,13 +317,6 @@ star-3
   xy: 428, 205
   size: 53, 53
   orig: 53, 53
-  offset: 0, 0
-  index: -1
-texture (6)
-  rotate: false
-  xy: 238, 177
-  size: 64, 64
-  orig: 64, 64
   offset: 0, 0
   index: -1
 thrust-1

@@ -156,7 +156,7 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-circle3.png
+circle-3.png
 
 
 muzzle flash
@@ -299,6 +299,6 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-circle2.png
+circle-2.png
 ../../images-large/dash.png
 

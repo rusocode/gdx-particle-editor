@@ -162,5 +162,5 @@ behind: false
 premultipliedAlpha: false
 spriteMode: single
 - Image Paths -
-circle1.png
+circle-1.png
 

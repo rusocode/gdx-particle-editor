@@ -510,16 +510,16 @@ public class Utils {
         defaultImageHandle = Gdx.files.internal("images/star-1.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("images/particle-ball1.png");
+        defaultImageHandle = Gdx.files.internal("images/particle-ball-1.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("images/particle-ball2.png");
+        defaultImageHandle = Gdx.files.internal("images/particle-ball-2.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("images/particle-ball3.png");
+        defaultImageHandle = Gdx.files.internal("images/particle-ball-3.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
-        defaultImageHandle = Gdx.files.internal("images/particle-ball4.png");
+        defaultImageHandle = Gdx.files.internal("images/particle-ball-4.png");
         fileHandles.put(defaultImageHandle.name(), defaultImageHandle);
 
         defaultImageHandle = Gdx.files.internal("images/particle-cloud.png");
