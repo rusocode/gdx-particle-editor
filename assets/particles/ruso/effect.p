@@ -152,7 +152,14 @@ aligned: false
 additive: true
 behind: false
 premultipliedAlpha: false
-spriteMode: single
+spriteMode: animated
 - Image Paths -
-star-1.png
+effect-0.png
+effect-1.png
+effect-2.png
+effect-3.png
+effect-4.png
+effect-5.png
+effect-6.png
+effect-7.png
 

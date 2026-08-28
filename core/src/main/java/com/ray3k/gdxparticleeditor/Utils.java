@@ -13,6 +13,7 @@ import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.ParticleEmitter;
 import com.badlogic.gdx.graphics.g2d.ParticleEmitter.SpriteMode;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.net.HttpRequestBuilder;
@@ -118,6 +119,35 @@ public class Utils {
         ShaderProgram.pedantic = false;
     }
 
+    /**
+     * Finds an image region by name across {@link Core#defaultAtlas} and any project-specific atlases in
+     * {@link Core#additionalAtlases}. The default atlas is searched first; additional atlases follow in load order.
+     *
+     * @return the first matching region, or null if no loaded atlas contains it
+     */
+    public static AtlasRegion findAtlasRegion(String regionName) {
+        if (defaultAtlas != null) {
+            var region = defaultAtlas.findRegion(regionName);
+            if (region != null) return region;
+        }
+        for (var atlas : additionalAtlases) {
+            var region = atlas.findRegion(regionName);
+            if (region != null) return region;
+        }
+        return null;
+    }
+
+    /**
+     * @return true if the texture is owned by a loaded atlas and therefore must not be disposed along with a particle effect
+     */
+    public static boolean isAtlasTexture(Texture texture) {
+        if (defaultAtlas != null && defaultAtlas.getTextures().contains(texture)) return true;
+        for (var atlas : additionalAtlases) {
+            if (atlas.getTextures().contains(texture)) return true;
+        }
+        return false;
+    }
+
     public static boolean loadParticle(FileHandle fileHandle) {
         return loadParticle(fileHandle, null, true);
     }
@@ -132,7 +162,7 @@ public class Utils {
                 else {
                     for (var imageFile : imageFileMap) {
                         var regionName = imageFile.value.nameWithoutExtension();
-                        var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                        var region = findAtlasRegion(regionName);
                         var sprite = region != null ? new Sprite(region) : new Sprite(new Texture(imageFile.value));
                         sprites.put(imageFile.key, sprite);
                     }
@@ -238,12 +268,11 @@ public class Utils {
     public static void disposeParticleEffect() {
         if (particleEffect == null)
             return;
-        var atlasTextures = defaultAtlas != null ? defaultAtlas.getTextures() : null;
         for (int i = 0, n = particleEffect.getEmitters().size; i < n; i++) {
             ParticleEmitter emitter = particleEffect.getEmitters().get(i);
             for (Sprite sprite : emitter.getSprites()) {
                 var texture = sprite.getTexture();
-                if (atlasTextures == null || !atlasTextures.contains(texture))
+                if (!isAtlasTexture(texture))
                     texture.dispose();
             }
         }
@@ -268,7 +297,7 @@ public class Utils {
                 else {
                     for (var imageFile : imageFileMap) {
                         var regionName = imageFile.value.nameWithoutExtension();
-                        var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                        var region = findAtlasRegion(regionName);
                         var sprite = region != null ? new Sprite(region) : new Sprite(new Texture(imageFile.value));
                         sprites.put(imageFile.value.name(), sprite);
                     }
@@ -340,7 +369,7 @@ public class Utils {
         var path = fileHandle.name();
         emitter.getImagePaths().add(path);
         fileHandles.put(path, fileHandle);
-        var particleRegion = defaultAtlas != null ? defaultAtlas.findRegion("particle") : null;
+        var particleRegion = findAtlasRegion("particle");
         var sprite = particleRegion != null ? new Sprite(particleRegion) : new Sprite(new Texture(fileHandle));
         sprites.put(path, sprite);
         emitter.getSprites().add(sprite);
@@ -568,10 +597,9 @@ public class Utils {
     public static void reloadSprites() {
         UndoManager.clear();
 
-        var atlasTextures = defaultAtlas != null ? defaultAtlas.getTextures() : null;
         for (var sprite : sprites.values()) {
             var texture = sprite.getTexture();
-            if (atlasTextures == null || !atlasTextures.contains(texture))
+            if (!isAtlasTexture(texture))
                 texture.dispose();
         }
         sprites.clear();
@@ -579,7 +607,7 @@ public class Utils {
             emitter.getSprites().clear();
             for (var path : emitter.getImagePaths()) {
                 var regionName = path.contains(".") ? path.substring(0, path.lastIndexOf('.')) : path;
-                var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                var region = findAtlasRegion(regionName);
                 var sprite = region != null ? new Sprite(region) : new Sprite(new Texture(fileHandles.get(path)));
                 sprites.put(path, sprite);
                 emitter.getSprites().add(sprite);
@@ -599,7 +627,7 @@ public class Utils {
                 var normalizedPath = imagePath.replace('\\', '/');
                 var imageName = new File(normalizedPath).getName();
                 var regionName = imageName.contains(".") ? imageName.substring(0, imageName.lastIndexOf('.')) : imageName;
-                var region = defaultAtlas != null ? defaultAtlas.findRegion(regionName) : null;
+                var region = findAtlasRegion(regionName);
                 if (region != null) {
                     emitterSprites.add(new Sprite(region));
                 } else {
