@@ -6,336 +6,392 @@ filter: Nearest, Nearest
 repeat: none
 aura
   rotate: false
-  xy: 368, 260
+  xy: 368, 265
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 blob
   rotate: false
-  xy: 266, 72
+  xy: 266, 77
   size: 27, 41
   orig: 27, 41
   offset: 0, 0
   index: -1
 circle-1
   rotate: false
-  xy: 174, 2
+  xy: 174, 7
   size: 60, 60
   orig: 60, 60
   offset: 0, 0
   index: -1
 circle-2
   rotate: false
-  xy: 238, 115
+  xy: 238, 120
   size: 60, 60
   orig: 60, 60
   offset: 0, 0
   index: -1
 circle-3
   rotate: false
-  xy: 304, 205
+  xy: 304, 210
   size: 60, 60
   orig: 60, 60
   offset: 0, 0
   index: -1
 circle-4
   rotate: false
-  xy: 366, 198
+  xy: 366, 203
   size: 60, 60
   orig: 60, 60
   offset: 0, 0
   index: -1
 circle-gaussian-0.8
   rotate: false
-  xy: 775, 390
+  xy: 775, 395
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 circle-power-0.5
   rotate: false
-  xy: 809, 390
+  xy: 809, 395
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 cloud
   rotate: false
-  xy: 583, 415
+  xy: 583, 420
   size: 92, 86
   orig: 92, 86
   offset: 0, 0
   index: -1
 diamond
   rotate: false
-  xy: 368, 340
+  xy: 368, 345
   size: 17, 31
   orig: 17, 31
   offset: 0, 0
   index: -1
+effect-0
+  rotate: false
+  xy: 2, 2
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+effect-1
+  rotate: false
+  xy: 108, 23
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+effect-2
+  rotate: false
+  xy: 996, 427
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+effect-3
+  rotate: false
+  xy: 466, 339
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+effect-4
+  rotate: false
+  xy: 262, 262
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+effect-5
+  rotate: false
+  xy: 483, 255
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+effect-6
+  rotate: false
+  xy: 334, 169
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+effect-7
+  rotate: false
+  xy: 368, 335
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
 explosion-1
   rotate: false
-  xy: 491, 412
+  xy: 491, 417
   size: 90, 89
   orig: 90, 89
   offset: 0, 0
   index: -1
 explosion-2
   rotate: false
-  xy: 763, 424
+  xy: 763, 429
   size: 81, 77
   orig: 81, 77
   offset: 0, 0
   index: -1
 explosion-3
   rotate: false
-  xy: 846, 425
+  xy: 846, 430
   size: 74, 76
   orig: 74, 76
   offset: 0, 0
   index: -1
 firework
   rotate: false
-  xy: 2, 7
+  xy: 2, 12
   size: 104, 104
   orig: 104, 104
   offset: 0, 0
   index: -1
 glass-1
   rotate: false
-  xy: 775, 362
+  xy: 775, 367
   size: 34, 26
   orig: 34, 26
   offset: 0, 0
   index: -1
 glass-2
   rotate: false
-  xy: 235, 66
+  xy: 235, 71
   size: 29, 47
   orig: 29, 47
   offset: 0, 0
   index: -1
 glass-3
   rotate: false
-  xy: 236, 2
+  xy: 236, 7
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 glass-4
   rotate: false
-  xy: 349, 179
+  xy: 349, 184
   size: 13, 24
   orig: 13, 24
   offset: 0, 0
   index: -1
 glass-5
   rotate: false
-  xy: 300, 110
+  xy: 300, 115
   size: 29, 28
   orig: 29, 28
   offset: 0, 0
   index: -1
 glass-6
   rotate: false
-  xy: 304, 174
+  xy: 304, 179
   size: 43, 29
   orig: 43, 29
   offset: 0, 0
   index: -1
 gore
   rotate: false
-  xy: 174, 64
+  xy: 174, 69
   size: 59, 71
   orig: 59, 71
   offset: 0, 0
   index: -1
 neutron
   rotate: false
-  xy: 132, 137
+  xy: 132, 142
   size: 104, 104
   orig: 104, 104
   offset: 0, 0
   index: -1
 neutron-full
   rotate: false
-  xy: 262, 267
+  xy: 262, 272
   size: 104, 104
   orig: 104, 104
   offset: 0, 0
   index: -1
 note-1
   rotate: false
-  xy: 996, 432
+  xy: 996, 437
   size: 24, 69
   orig: 24, 69
   offset: 0, 0
   index: -1
 note-2
   rotate: false
-  xy: 658, 355
+  xy: 658, 360
   size: 18, 58
   orig: 18, 58
   offset: 0, 0
   index: -1
 note-3
   rotate: false
-  xy: 678, 361
+  xy: 678, 366
   size: 31, 58
   orig: 31, 58
   offset: 0, 0
   index: -1
 note-4
   rotate: false
-  xy: 434, 260
+  xy: 434, 265
   size: 58, 64
   orig: 58, 64
   offset: 0, 0
   index: -1
 note-5
   rotate: false
-  xy: 466, 344
+  xy: 466, 349
   size: 58, 64
   orig: 58, 64
   offset: 0, 0
   index: -1
 particle
   rotate: false
-  xy: 300, 140
+  xy: 300, 145
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 particle-ball-1
   rotate: false
-  xy: 2, 373
+  xy: 2, 378
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 particle-ball-2
   rotate: false
-  xy: 2, 243
+  xy: 2, 248
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 particle-ball-3
   rotate: false
-  xy: 132, 373
+  xy: 132, 378
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 particle-ball-4
   rotate: false
-  xy: 2, 113
+  xy: 2, 118
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 particle-cloud
   rotate: false
-  xy: 132, 243
+  xy: 132, 248
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 particle-fire
   rotate: false
-  xy: 262, 373
+  xy: 262, 378
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 polygon
   rotate: false
-  xy: 526, 346
+  xy: 526, 351
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 pre_particle
   rotate: false
-  xy: 236, 32
+  xy: 236, 37
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 rain
   rotate: false
-  xy: 711, 362
+  xy: 711, 367
   size: 30, 57
   orig: 30, 57
   offset: 0, 0
   index: -1
 rain-blurred
   rotate: false
-  xy: 743, 362
+  xy: 743, 367
   size: 30, 57
   orig: 30, 57
   offset: 0, 0
   index: -1
 rect
   rotate: false
-  xy: 132, 126
+  xy: 132, 131
   size: 9, 9
   orig: 9, 9
   offset: 0, 0
   index: -1
 snow-flake-1
   rotate: false
-  xy: 392, 410
+  xy: 392, 415
   size: 97, 91
   orig: 97, 91
   offset: 0, 0
   index: -1
 snow-flake-2
   rotate: false
-  xy: 592, 349
+  xy: 592, 354
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 star-1
   rotate: false
-  xy: 238, 177
+  xy: 238, 182
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 star-2
   rotate: false
-  xy: 677, 421
+  xy: 677, 426
   size: 84, 80
   orig: 84, 80
   offset: 0, 0
   index: -1
 star-3
   rotate: false
-  xy: 428, 205
+  xy: 428, 210
   size: 53, 53
   orig: 53, 53
   offset: 0, 0
   index: -1
 thrust-1
   rotate: false
-  xy: 922, 420
+  xy: 922, 425
   size: 72, 81
   orig: 72, 81
   offset: 0, 0
   index: -1
 thrust-2
   rotate: false
-  xy: 108, 28
+  xy: 108, 33
   size: 64, 83
   orig: 64, 83
   offset: 0, 0
   index: -1
 thrust-3
   rotate: false
-  xy: 392, 326
+  xy: 392, 331
   size: 72, 82
   orig: 72, 82
   offset: 0, 0

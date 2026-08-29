@@ -188,19 +188,6 @@ public class Core extends ApplicationAdapter {
     public static TextureAtlas defaultAtlas;
 
     /**
-     * Optional project-specific texture atlases packed separately from the bundled assets/images/ set (for example,
-     * game particle art kept apart from the editor's sample assets). Searched after {@link #defaultAtlas} when
-     * resolving image regions. Empty when none are present next to the working directory.
-     */
-    public static final Array<TextureAtlas> additionalAtlases = new Array<>();
-
-    /**
-     * File names of the optional atlases loaded into {@link #additionalAtlases} at startup, resolved as internal files
-     * relative to the working directory. Missing files are skipped silently.
-     */
-    public static final String[] ADDITIONAL_ATLAS_PATHS = {"effect.atlas"};
-
-    /**
      * The default name to be used when the user saves the ParticleEffect.
      */
     public static String defaultFileName;
@@ -367,10 +354,6 @@ public class Core extends ApplicationAdapter {
 
         activeEmitters = new OrderedMap<>();
         defaultAtlas = new TextureAtlas(Gdx.files.internal("particles.atlas"));
-        for (var atlasPath : ADDITIONAL_ATLAS_PATHS) {
-            var atlasFile = Gdx.files.internal(atlasPath);
-            if (atlasFile.exists()) additionalAtlases.add(new TextureAtlas(atlasFile));
-        }
 
         Listeners.initializeListeners();
 
@@ -395,8 +378,6 @@ public class Core extends ApplicationAdapter {
     @Override
     public void dispose() {
         if (defaultAtlas != null) defaultAtlas.dispose();
-        for (var atlas : additionalAtlases) atlas.dispose();
-        additionalAtlases.clear();
     }
 
     public static void populate(String openTable) {
